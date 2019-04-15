@@ -6,10 +6,10 @@ module.exports = {
   useTabs: false,
   semi: true,
   singleQuote: true,
-  quoteProps: 'preserve',
+  quoteProps: "preserve",
   jsxSingleQuote: false,
-  trailingComma: 'es5',
+  trailingComma: "es5",
   bracketSpacing: true,
   jsxBracketSameLine: false,
-  arrowParens: 'always',
+  arrowParens: "always"
 };
