@@ -1,6 +1,0 @@
-build/*
-config/*
-dist/*
-static/*
-apps/static/*
-node_modules
