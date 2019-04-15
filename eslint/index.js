@@ -5,13 +5,16 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:jest/recommended",
     "plugin:prettier/recommended",
     "prettier/react"
   ],
+  plugins: ["jest", "react-hooks"],
   env: {
     browser: true,
     es6: true,
-    node: true
+    node: true,
+    "jest/globals": true
   },
   rules: {
     "prefer-const": "warn",
@@ -22,7 +25,9 @@ module.exports = {
       }
     ],
     "no-unused-vars": ["error", { ignoreRestSiblings: true }],
-    "react/jsx-no-target-blank": "warn"
+    "react/jsx-no-target-blank": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   globals: {
     __REVISION__: false
