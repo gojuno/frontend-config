@@ -27,7 +27,7 @@ module.exports = {
     "no-unused-vars": ["error", { ignoreRestSiblings: true }],
     "react/jsx-no-target-blank": "warn",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react/no-unescaped-entities": 0
   },
   globals: {
     __REVISION__: false
