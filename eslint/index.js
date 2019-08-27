@@ -1,4 +1,4 @@
-// eslint config
+// ESLint config
 
 module.exports = {
   parser: "babel-eslint",
@@ -30,6 +30,7 @@ module.exports = {
     "react/no-unescaped-entities": 0
   },
   globals: {
-    __REVISION__: false
+    __RELEASE_NAME__: false,
+    __REVISION__: false,
   }
 };
