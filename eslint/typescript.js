@@ -1,29 +1,32 @@
-// ESLint config
+// TypeScript
+
+const path = require('path')
 
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: true,
+    project: path.resolve(process.cwd(), 'tsconfig.json'),
+  },
   extends: [
     'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:react/recommended',
-    'plugin:jest/recommended',
-    'plugin:prettier/recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
     'prettier/react',
   ],
-  plugins: ['jest', 'react', 'react-hooks'],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks'],
   env: {
     browser: true,
     es6: true,
     node: true,
-    jest: true,
   },
   rules: {
     'prefer-const': 'warn',
-    'react/prop-types': [
-      'warn',
-      {
-        ignore: ['dispatch'],
-      },
-    ],
+    'react/prop-types': 0,
     'no-unused-vars': ['error', { ignoreRestSiblings: true }],
     'react/jsx-no-target-blank': 'warn',
     'react-hooks/rules-of-hooks': 'error',
