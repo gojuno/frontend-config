@@ -1,4 +1,4 @@
-// prettier config
+// Prettier config
 
 module.exports = {
   printWidth: 100,
@@ -6,10 +6,10 @@ module.exports = {
   useTabs: false,
   semi: false,
   singleQuote: true,
-  quoteProps: "preserve",
+  quoteProps: 'preserve',
   jsxSingleQuote: false,
-  trailingComma: "es5",
+  trailingComma: 'es5',
   bracketSpacing: true,
   jsxBracketSameLine: false,
-  arrowParens: "avoid"
-};
+  arrowParens: 'avoid',
+}
