@@ -31,7 +31,7 @@ module.exports = {
     'react/jsx-no-target-blank': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react/no-unescaped-entities': 0,
-    '@typescript-eslint/camelcase': ['error', { ignoreDestructuring: true, properties: 'never' }],
+    '@typescript-eslint/camelcase': 0,
     '@typescript-eslint/explicit-function-return-type': 0,
   },
   globals: {
