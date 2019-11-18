@@ -43,4 +43,17 @@ module.exports = {
       version: 'detect',
     },
   },
+  overrides: [
+    {
+      files: ['**/*.{test,spec}.{js,ts,tsx}'],
+      env: {
+        jest: true,
+      },
+      plugins: ['testing-library'],
+      extends: ['plugin:testing-library/react'],
+      rules: {
+        '@typescript-eslint/ban-ts-ignore': 0,
+      },
+    },
+  ],
 }
